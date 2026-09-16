@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 18,5+46,5+10+16,5+8,5 -->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <!-- Internal Combustion Engine Vehicles (ICEV) -->
+    <vType id="ICEV_Petrol" vClass="passenger" color="1,0,0" emissionClass="HBEFA3/PC_G_EU6" probability="0.465"/>
+    <vType id="ICEV_Diesel" vClass="passenger" color="0.8,0,0" emissionClass="HBEFA3/PC_D_EU6" probability="0.185"/>
+
+
+
+    <!-- Hybrid Electric Vehicles (HEV) -->
+    <vType id="HEV" vClass="passenger" color="0,0.3,0" emissionClass="HBEFA3/PC_G_EU6" probability="0.10">
+        <param key="has.battery.device" value="true"/>
+        <param key="device.battery.capacity" value="1.5"/>
+        <param key="device.battery.maximumPower" value="30"/>
+        <param key="shutOffAutoDuration" value="20"/>
+    </vType>
+
+    <!-- Plug-In Hybrid Electric Vehicles (PHEV) -->
+    <vType id="PHEV" vClass="passenger" color="0,0.6,0" emissionClass="HBEFA3/PC_G_EU6" probability="0.085">
+        <param key="has.battery.device" value="true"/>
+        <param key="device.battery.capacity" value="12"/>
+        <param key="device.battery.maximumPower" value="60"/>
+        <param key="shutOffAutoDuration" value="20"/>
+    </vType>
+
+    
+    <!-- Battery Electric Vehicles (BEV) -->
+    <vType id="BEV" vClass="passenger" color="0,1,0" emissionClass="Energy" probability="0.165"/>
+
+
+    <vTypeDistribution id="TD" vTypes="ICEV_Petrol ICEV_Diesel HEV PHEV BEV"/>
+
+</additional>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <!-- Cars -->
+	<vType id="CAV4" vClass="passenger" color="1,0,0" emissionClass="HBEFA3/PC_G_EU4" probability="0.10"/>
+	<vType id="CAV4_ST" vClass="passenger" color="1,1,0" emissionClass="HBEFA3/PC_G_EU4" probability="0.25">
+		<param key="shutOffAutoDuration" value="20"/>
+	</vType>
+	<vType id="EV1" vClass="passenger" color="0,1,0" emissionClass="Energy" probability="0.25"/>
+	<vType id="Hybrid1" vClass="passenger" color="0,0,1" emissionClass="HBEFA3/PC_G_EU5" probability="0.25">
+		<param key="has.battery.device" value="true"/>
+		<param key="device.battery.capacity" value="1.5"/>
+		<param key="device.battery.maximumPower" value="30"/>
+		<param key="shutOffAutoDuration" value="20"/>
+	</vType>
+
+	<!-- Trucks -->
+	<vType id="DieselTruck" vClass="truck" color="0.4,0.4,0.4" emissionClass="HBEFA3/HDV_D_EU5" probability="0.15"/>
+
+	<!-- Distribution -->
+	<vTypeDistribution id="TD" vTypes="CAV4 CAV4_ST EV1 Hybrid1 DieselTruck"/>
+
+</additional>

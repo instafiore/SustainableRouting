@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Luxembourg SUMO Traffic (LuST) Scenario
+This project is licensed under the terms of the MIT license.
+Author: Lara CODECA [codeca@gmail.com]
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo-sim.org/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="subnetLust.net.xml"/>
+        <route-files value="solutions/asp-v1/2025-10-19_10-39-19-731263-finalv1-run-2-subnetLust-v1-None-1.0/solution.xml"/>
+        <additional-files value="scenario1.add.xml"/> 
+    </input>
+
+    <!-- <output>
+        <summary-output value="due.actuated.summary.xml"/>
+        <tripinfo-output value="due.actuated.tripinfo.xml"/>
+    </output> -->
+
+    <!-- <time>
+		<begin value="0"/>
+		<end value="3600"/>
+    </time> -->
+
+    <output>
+        <tripinfo-output value="tripinfos-v1.xml"/>
+    </output>
+
+    <!-- <processing>
+        <ignore-junction-blocker value="20"/>
+        <time-to-teleport value="600"/>
+        <max-depart-delay value="600"/>
+        <routing-algorithm value="dijkstra"/>
+    </processing> -->
+
+    <!-- <report>
+        <verbose value="true"/>
+        <log value="due.actuated.log"/>
+    </report> -->
+
+</configuration>

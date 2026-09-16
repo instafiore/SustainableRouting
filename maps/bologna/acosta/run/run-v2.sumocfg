@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-10 16:09:00 by Eclipse SUMO sumo Version 1.22.0
+-->
+
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <!-- device.emissions.probability 1.0  -->
+    <input>
+        <net-file value="../netedit/acosta_buslanes.net.xml"/>
+        <route-files value="solutions/asp-v2/2026_03_20_13_46_11_786010-t=ea-s=green-mn=acosta_buslanes-v=v2-pcv=1.0-str=0-oth=0.7-wth=0.8/solution.xml"/>
+        <additional-files value="scenario-green.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfos-v2.xml"/>
+    </output>
+
+    <time>
+		<begin value="0"/>
+		<!-- <end value="3600"/> -->
+    </time>
+
+</sumoConfiguration>

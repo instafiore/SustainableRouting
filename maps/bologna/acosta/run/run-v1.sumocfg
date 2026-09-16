@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-10 16:09:00 by Eclipse SUMO sumo Version 1.22.0
+-->
+
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="../netedit/acosta_buslanes.net.xml"/>
+        <route-files value="solutions/asp-v1/2025-10-19_10-38-58-525434-finalv1-run-2-acosta_buslanes-v1-None-1.0/solution.xml"/>
+        <additional-files value="scenario-real.add.xml"/>
+    </input>
+
+
+    <output>
+        <tripinfo-output value="tripinfos-v1.xml"/>
+    </output>
+
+
+    <time>
+		<begin value="0"/>
+		<!-- <end value="3600"/> -->
+    </time>
+
+</sumoConfiguration>

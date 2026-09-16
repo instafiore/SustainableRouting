@@ -1,0 +1,13 @@
+exp*
+exp_server/*
+maps/TAPASCologne-0.32.0/cologne.poly.xml
+maps/TAPASCologne-0.32.0/cologne.trips.xml
+**/*emissions
+results_co2
+**emissionRiskSimulationRoutes**
+
+*log*.txt
+*.log
+log*
+**emissionSimulationRoutes**
+asp/last_*
